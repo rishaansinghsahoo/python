@@ -2,5 +2,5 @@ import streamlit as st
 
 st.title("Rishaan first app ")
 st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
+    "This is my first app, I will make a calculator"
 )
