@@ -9,7 +9,7 @@ n1=np.random.randint(low=0,high=9)
 n2=np.random.randint(low=0,high=9)
 s=n1+n2
 st.write("First number is " , n1)
-st.write("Second numberis " , n2)
+st.write("Second number is " , n2)
 st.write("The first sum is" , s)       
 
 
