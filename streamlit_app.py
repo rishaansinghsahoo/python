@@ -1,4 +1,7 @@
 import streamlit as st
+st.divider()
+
+
 
 st.title("Rishaan first app ")
 st.write("This is my first app, I will make a calculator")
