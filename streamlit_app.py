@@ -22,11 +22,11 @@ a=st.number_input(" Enter your answer",step=1)
 
 st.button("check your answer2", on_click = check_answer(a,s))
 
-if st.button("check your answer"):
-  if a==s:
-    st.write( " YAY YOU ARE CORRRRRRRREEEEEECCCCCCTTTTTTTTTTTTTTTTTT")
-  else:
-    st.write(" YOU GET A RED CAAAAAAAAARRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRD")
+# if st.button("check your answer"):
+#   if a==s:
+#     st.write( " YAY YOU ARE CORRRRRRRREEEEEECCCCCCTTTTTTTTTTTTTTTTTT")
+#   else:
+#     st.write(" YOU GET A RED CAAAAAAAAARRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRD")
                  
 
 st.divider()
