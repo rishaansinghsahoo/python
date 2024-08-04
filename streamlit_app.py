@@ -1,4 +1,18 @@
 import streamlit as st
+import numpy as np
+
+if st.button("Refresh"):
+  st.rerun()
+
+st.title("This is a maths Sats test")
+n1=np.random.randint(low=0,high=9)
+n2=np.random.randint(low=0,high=9)
+s=n1*n2
+st.write("First number is " , n1)
+st.write("Second numberis " , n2)
+st.write("The first sum is" , s)       
+
+
 st.divider()
 
 
