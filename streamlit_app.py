@@ -10,8 +10,15 @@ n2=np.random.randint(low=0,high=9)
 s=n1+n2
 st.write("First number is " , n1)
 st.write("Second number is " , n2)
-st.write("The first sum is" , s)       
+# st.write("The first sum is" , s)       
+a=st.number_input(" Enter your answer",step=1)
 
+
+if a==s:
+  st.write( " YAY YOU ARE CORRRRRRRREEEEEECCCCCCTTTTTTTTTTTTTTTTTT")
+else:
+  st.write(" YOU GET A RED CAAAAAAAAARRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRD")
+                 
 
 st.divider()
 
