@@ -1,6 +1,13 @@
 import streamlit as st
 import numpy as np
 
+def check_answer(a,s):
+  if a==s:
+    st.write( " YAY YOU ARE CORRRRRRRREEEEEECCCCCCTTTTTTTTTTTTTTTTTT")
+  else:
+    st.write(" YOU GET A RED CAAAAAAAAARRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRD")
+
+
 if st.button("Refresh"):
   st.rerun()
 
@@ -12,6 +19,8 @@ st.write("First number is " , n1)
 st.write("Second number is " , n2)
 # st.write("The first sum is" , s)       
 a=st.number_input(" Enter your answer",step=1)
+
+if st.button("check your answer2", on_click = check_answer):
 
 if st.button("check your answer"):
   if a==s:
