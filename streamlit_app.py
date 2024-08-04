@@ -20,7 +20,7 @@ st.write("Second number is " , n2)
 # st.write("The first sum is" , s)       
 a=st.number_input(" Enter your answer",step=1)
 
-st.button("check your answer2", on_click = check_answer)
+st.button("check your answer2", on_click = check_answer(a,s))
 
 if st.button("check your answer"):
   if a==s:
