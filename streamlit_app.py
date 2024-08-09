@@ -1,20 +1,27 @@
 import streamlit as st
 import numpy as np
 
+if st.button("Refresh"):
+  st.cache_resource.clear()
+  st.rerun()
+
 def check_answer(a,s):
   if a==s:
     st.write( " YAY YOU ARE CORRRRRRRREEEEEECCCCCCTTTTTTTTTTTTTTTTTT")
   else:
     st.write(" YOU GET A RED CAAAAAAAAARRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRD")
 
-
-if st.button("Refresh"):
-  st.rerun()
-
 st.title("This is a maths Sats test")
 n1=np.random.randint(low=0,high=9)
 n2=np.random.randint(low=0,high=9)
 s=n1+n2
+
+if 'answer' not in st.session_state:
+  st.write("inside session creation:")
+  st.session_state.answer = s
+  st.write("session answer:",s)
+
+
 st.write("First number is " , n1)
 st.write("Second number is " , n2)
 # st.write("The first sum is" , s)       
