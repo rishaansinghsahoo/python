@@ -6,6 +6,7 @@ if st.button("Refresh"):
   st.rerun()
 
 st.title("This is a maths Sats test")
+st.write("sum of these numbers")
 n1=np.random.randint(low=550,high=10000)
 n2=np.random.randint(low=450,high=1000)
 s=n1+n2
