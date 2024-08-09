@@ -17,9 +17,9 @@ n2=np.random.randint(low=0,high=9)
 s=n1+n2
 
 if 'answer' not in st.session_state:
-  st.write("inside session creation:")
+  # st.write("inside session creation:")
   st.session_state.answer = s
-  st.write("session answer:",s)
+  # st.write("session answer:",s)
 
 
 st.write("First number is " , n1)
@@ -32,12 +32,11 @@ if st.button("check your answer"):
   ans = st.session_state.answer
   st.write("Actual Answer: ", ans)
   st.write("Your Answer: ", a)
-  
   if a==ans:
     st.write( " YAY YOU ARE CORRRRRRRREEEEEECCCCCCTTTTTTTTTTTTTTTTTT")
   else:
     st.write(" YOU GET A RED CAAAAAAAAARRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRD")
-  st.write("session answer:",s)
+  st.session_state.answer = s
                  
 
 st.divider()
